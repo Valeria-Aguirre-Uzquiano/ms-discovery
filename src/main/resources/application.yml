@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ms-dicovery
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    eviction-internal-timer-in-ms: 3000
