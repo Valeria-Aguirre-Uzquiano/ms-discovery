@@ -7,7 +7,7 @@ ARG DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY ${DEPENDENCY}/META-INF /app/META-INF
 COPY ${DEPENDENCY}/BOOT-INF/classes /app
-ENV SERVER_PORT 9020
+ENV SERVER_PORT 8761
 ENV EUREKA_URI "http://localhost:8761/eureka"
 #ENV URI_CONFIG "http://localhost:8888"
 ENTRYPOINT ["java", \
